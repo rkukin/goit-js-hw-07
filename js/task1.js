@@ -1,14 +1,10 @@
 "use strict";
 
-const categoriesCount = document.querySelectorAll("li.item");
+const categories = document.querySelectorAll("li.item");
 
-const categoriesTitles = document.querySelectorAll("li.item > h2");
+console.log(`В списке ${categories.length} категории.`);
 
-const subcategoriesCount = document.querySelectorAll("li.item > ul");
-
-console.log(`В списке ${categoriesCount.length} категории.`);
-
-for (let category of categoriesTitles) {
-  console.log(`Категория: ${category.innerText}`);
-  console.log(`Кол-во елементов: ${categoriesCount}`);
+for (let i = 0; i < categories.length; i++) {
+  console.log(`Категория: ${categories[i].firstElementChild.innerText}`);
+  console.log(`Категория: ${categories[i].lastElementChild.childElementCount}`);
 }

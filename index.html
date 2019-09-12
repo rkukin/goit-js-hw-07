@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <style type="text/css">
+      #gallery {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
     <title>JS Homework 7</title>
   </head>
   <body>
@@ -44,10 +54,20 @@
     <section name="Task2">
       <ul id="ingredients"></ul>
     </section>
+    <section name="Task3">
+      <ul id="gallery"></ul>
+    </section>
+    <section name="Task4">
+      <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment">+1</button>
+      </div>
+    </section>
     <!-- <script src="js/task1.js" type="module"></script> -->
-    <script src="js/task2.js" type="module"></script>
-    <!-- <script src="js/task3.js" type="module"></script> -->
-    <!-- <script src="js/task4.js" type="module"></script> -->
+    <!-- <script src="js/task2.js" type="module"></script> -->
+    <script src="js/task3.js" type="module"></script>
+    <script src="js/task4.js" type="module"></script>
     <!-- <script src="js/task5.js" type="module"></script> -->
     <!-- <script src="js/task6.js" type="module"></script> -->
     <!-- <script src="js/task7.js" type="module"></script> -->

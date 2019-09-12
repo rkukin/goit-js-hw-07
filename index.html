@@ -13,6 +13,17 @@
       img {
         max-width: 100%;
       }
+      #validation-input.valid {
+        outline: 3px solid #4caf50;
+      }
+
+      #validation-input.invalid {
+        outline: 3px solid #f44336;
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
     </style>
     <title>JS Homework 7</title>
   </head>
@@ -68,7 +79,14 @@
       <input type="text" placeholder="Ваше имя?" id="name-input" />
       <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
     </section>
-    <section name="Task6"></section>
+    <section name="Task6">
+      <input
+        type="text"
+        id="validation-input"
+        data-length="6"
+        placeholder="Введи 6 символов"
+      />
+    </section>
     <section name="Task7"></section>
     <section name="Task8"></section>
     <!-- <script src="js/task1.js" type="module"></script> -->
@@ -76,7 +94,7 @@
     <!-- <script src="js/task3.js" type="module"></script> -->
     <!-- <script src="js/task4.js" type="module"></script> -->
     <!-- <script src="js/task5.js" type="module"></script> -->
-    <!-- <script src="js/task6.js" type="module"></script> -->
+    <script src="js/task6.js" type="module"></script>
     <!-- <script src="js/task7.js" type="module"></script> -->
     <!-- <script src="js/task8.js" type="module"></script> -->
   </body>
